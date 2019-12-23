@@ -1,0 +1,198 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  min-height: 100%;
+}
+body {
+  font-family: Raleway;
+}
+.container {
+  max-width: 100%;
+}
+nav {
+  width: 50%;
+  text-align: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1% 1% 1% 0;
+}
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 2%;
+  font-size: 1.8rem;
+  color: #1B1A1A;
+}
+.home header {
+  display: flex;
+}
+.home .Contents {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.home .Contents h1 {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  color: #1B1A1A;
+}
+.home .Contents p {
+  font-size: 1.8rem;
+  padding: 3% 0 9% 0;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #1B1A1A;
+}
+.home .Contents .buttons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.home .Contents .buttons button {
+  border: none;
+  background-color: #FF9233;
+  color: #1B1A1A;
+  font-weight: bold;
+  border-radius: 3px;
+  width: 20%;
+  padding: 2% 0;
+  margin: 0 2%;
+}
+.home .fitnessGirl {
+  width: 50%;
+  display: flex;
+}
