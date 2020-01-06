@@ -128,16 +128,16 @@ table {
 }
 * {
   box-sizing: border-box;
+  overflow: hidden;
 }
-html {
-  font-size: 62.5%;
-  min-height: 100%;
-}
+html,
 body {
+  font-size: 62.5%;
   font-family: Raleway;
+  height: 100%;
 }
-.container {
-  max-width: 100%;
+.section {
+  height: 100%;
 }
 nav {
   width: 50%;
@@ -154,35 +154,158 @@ nav a {
   font-size: 1.8rem;
   color: #1B1A1A;
 }
-.home header {
+@media (max-width: 500px) {
+  nav {
+    display: none;
+  }
+}
+.home .container-half {
   display: flex;
 }
-.home .Contents {
-  width: 50%;
+.home .left-half {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  flex: 1;
 }
-.home .Contents h1 {
+.home .left-half .fitnessGirl {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .left-half .fitnessGirl {
+    filter: brightness(18%);
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -512px;
+  }
+}
+.home .right-half {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* Caption text */
+  /* The dots/bullets/indicators */
+  /* Fading animation */
+}
+.home .right-half h1 {
   text-align: center;
   font-size: 5rem;
   font-weight: bold;
   letter-spacing: 0.02em;
   color: #1B1A1A;
+  padding: 1.5% 0;
 }
-.home .Contents p {
-  font-size: 1.8rem;
-  padding: 3% 0 9% 0;
-  text-align: center;
-  letter-spacing: 0.05em;
+@media (max-width: 500px) {
+  .home .right-half h1 {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    line-height: 54px;
+    font-size: 4rem;
+  }
+}
+.home .right-half .prev,
+.home .right-half .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: gray;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.home .right-half .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.home .right-half .prev:hover,
+.home .right-half .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.home .right-half .text {
   color: #1B1A1A;
+  font-size: 2rem;
+  padding: 5% 15%;
+  text-align: center;
+  line-height: 2.5rem;
 }
-.home .Contents .buttons {
+.home .right-half .text h3 {
+  padding: 1.5% 0;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .home .right-half .text {
+    color: white;
+  }
+}
+.home .right-half .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.home .right-half .active,
+.home .right-half .dot:hover {
+  background-color: #717171;
+}
+.home .right-half .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.home .right-half .user-options {
+  padding: 4% 0;
+}
+.home .right-half .user-options .sign-up {
+  text-align: center;
+  padding: 1% 0 2% 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.home .right-half .user-options .buttons {
   display: flex;
   width: 100%;
   justify-content: center;
+  border: 1px solid white;
 }
-.home .Contents .buttons button {
+.home .right-half .user-options .buttons button {
   border: none;
   background-color: #FF9233;
   color: #1B1A1A;
@@ -192,7 +315,19 @@ nav a {
   padding: 2% 0;
   margin: 0 2%;
 }
-.home .fitnessGirl {
-  width: 50%;
-  display: flex;
+@media (max-width: 500px) {
+  .home .right-half .user-options .buttons button {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .right-half .user-options {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    line-height: 54px;
+    font-size: 4rem;
+  }
 }
