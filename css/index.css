@@ -196,11 +196,6 @@ nav a {
   font-size: 1.8rem;
   color: white;
 }
-@media (max-width: 500px) {
-  nav {
-    display: none;
-  }
-}
 .home {
   position: relative;
   text-align: center;
@@ -235,13 +230,13 @@ nav a {
   font-weight: bold;
   letter-spacing: 0.02em;
   color: white;
-  padding: 1.5% 0;
+  padding: 4% 0;
 }
 @media (max-width: 500px) {
   .home h1 {
     line-height: 54px;
     font-size: 4rem;
-    padding: 30% 0;
+    padding: 21% 0;
   }
 }
 .home .slideshow-container {
