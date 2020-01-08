@@ -8,15 +8,14 @@
         <link href="css/index.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body class="body-home">
         <div class="container home">
-
-            <img src="img/girl_fixed.jpg" class="fitnessGirl" alt="Girl jumping in mid air.">
+            <img src="img/girl.jpg" class="fitness" alt="Girl jumping in mid air.">
             
             <nav>
                 <div class="navOptions">
                     <a href="#">Help</a>
-                    <a href="#">About</a>
+                    <a href="about.html">About</a>
                 </div>
             </nav>
 
@@ -28,8 +27,8 @@
                 </div>
 
                 <div class="buttons">
-                    <button>For Clients</button>
-                    <button>For Instructors</button>
+                    <button onclick="window.location.href = 'https://fitnessanywhere.netlify.com/signup/client';">For Clients</button>
+                    <button onclick="window.location.href = 'https://fitnessanywhere.netlify.com/signup/instructor';">For Instructors</buttonon>
                 </div>
             </div>
 
@@ -58,14 +57,10 @@
                 </div>
                 
             </div>
-                
-            <!-- <div class="dot-container">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span> 
-            </div> -->
 
+            <footer>
+                <p class="copyright">&copy; Fitness Anywhere 2020</p>
+            </footer>
         </div>
 
         <script>

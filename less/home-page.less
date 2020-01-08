@@ -4,8 +4,56 @@
     position: relative;
     text-align: center;
     color: white;
+
+    // Fonts and animations
+    h1, h2, h3, h4, h5 {
+        font-family: 'Raleway', sans-serif;
+        color: @ebony-clay;
+        animation-duration: 1.5s;
+        animation-name: slidein;
+      
+        @keyframes slidein {
+          from {
+            margin-top: 100%;
+            width: 100%; 
+          }
+        
+          to {
+            margin-top: 0%;
+            width: 100%;
+          }
+        }
+    }
+      
+    h2 {
+    font-size: 3.2rem;
+    }
+    
+    h3 {
+    font-size: 2.8rem;
+    }
+    
+    p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    animation-duration: 1.5s;
+    animation-name: slidein;
+    
+    @keyframes slidein {
+        from {
+        margin-top: 100%;
+        width: 100%; 
+        }
+    
+        to {
+        margin-top: 0%;
+        width: 100%;
+        }
+    }
+    }
+
     // Image of Fitness
-    .fitnessGirl {
+    .fitness {
         filter: brightness(18%);
         width: 100%;
         position: absolute;
@@ -88,31 +136,6 @@
             }
         }
 
-        // /* The dot/bullet/indicator container */
-        // .dot-container {
-        //     text-align: center;
-        //     padding: 20px;
-
-        //     /* The dots/bullets/indicators */
-        //     .dot {
-        //         cursor: pointer;
-        //         height: 15px;
-        //         width: 15px;
-        //         margin: 0 2px;
-        //         background-color: #bbb;
-        //         border-radius: 50%;
-        //         display: inline-block;
-        //         transition: background-color 0.6s ease;
-        //     }
-            
-        //     /* Add a background color to the active dot/circle */
-        //     .active, .dot:hover {
-        //         background-color: #717171;
-        //     }
-        // }
-        
-        
-
     // User Options
     .user-options {
         padding: 4% 0;
@@ -128,7 +151,7 @@
             display: flex;
             width: 100%;
             justify-content: center;
-            
+
             button {
                 border: none;  
                 background-color: @sun-orange;
@@ -145,6 +168,10 @@
                     padding: 3% 0;
                     font-size: 1.5rem;
                 }
+            }
+
+            button:hover {
+                background-color: white;
             }
         }
 

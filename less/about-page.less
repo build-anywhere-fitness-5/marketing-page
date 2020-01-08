@@ -1,0 +1,143 @@
+.about {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: visible;
+
+    // Fonts and animations
+    h1, h2, h3, h4, h5 {
+        font-family: 'Raleway', sans-serif;
+        animation-duration: 1.5s;
+        animation-name: slidein;
+      
+        @keyframes slidein {
+          from {
+            margin-top: 100%;
+            width: 100%; 
+          }
+        
+          to {
+            margin-top: 0%;
+            width: 100%;
+          }
+        }
+    }
+      
+    h2 {
+        font-size: 3.2rem;
+    }
+    
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+    }
+    
+    p {
+        font-size: 1.6rem;
+        line-height: 1.4;
+        animation-duration: 1.5s;
+        animation-name: slidein;
+        
+        @keyframes slidein {
+            from {
+            margin-top: 100%;
+            width: 100%; 
+            }
+        
+            to {
+            margin-top: 0%;
+            width: 100%;
+            }
+    }
+    }
+
+    // Image of Fitness
+    .fitness {
+        filter: brightness(18%);
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+
+        @media @phone {
+            // Dark filter
+            filter: brightness(18%);
+
+            // Set rules to fill background
+            min-height: 100%;
+            min-width: 1024px;
+
+            // Set up proportionate scaling
+            width: 100%;
+            height: auto;
+
+            // Set up positioning
+            position: fixed;
+            top: 0;
+            left: 50%;
+            margin-left: -512px;
+        }
+    }
+    
+    
+    // The Contents
+    h1 {
+        text-align: center;
+        font-size: 5rem;
+        font-weight: bold;
+        letter-spacing: 0.02em;
+        color: @white-text;
+        padding: 4% 0;
+        
+        @media @phone {
+            line-height: 54px;
+            font-size: 4rem;
+            padding: 21% 0;
+        }
+    }
+
+    // Team Members
+    .team {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 1% 0;
+
+        .members {
+            width: 50%;
+            padding: 0 0 6%;
+            
+            .memberProfiles {
+                width: 35%;
+                padding: 2% 2.5%;
+                border-radius: 50%;
+                
+                
+            }
+
+            h3 {
+                padding: 0 0 1.5%;
+                color: crimson;
+                font-weight: bold;
+            }
+
+            h4 {
+                padding: 0 0 6%;
+            }
+            
+            p {
+                font-style: italic;
+                padding: 0 9%;
+            }
+
+            @media @phone {
+                width: 100%;
+            }
+        }
+    }
+
+}
