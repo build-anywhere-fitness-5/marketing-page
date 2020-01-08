@@ -59,12 +59,12 @@
                 
             </div>
                 
-            <div class="dot-container">
+            <!-- <div class="dot-container">
                 <span class="dot" onclick="currentSlide(1)"></span> 
                 <span class="dot" onclick="currentSlide(2)"></span> 
                 <span class="dot" onclick="currentSlide(3)"></span>
                 <span class="dot" onclick="currentSlide(4)"></span> 
-            </div>
+            </div> -->
 
         </div>
 
@@ -75,14 +75,14 @@
             function showSlides() {
                 var i;
                 var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
+                // var dots = document.getElementsByClassName("dot");
                 for (i = 0; i < slides.length; i++) {
                     slides[i].style.display = "none";
                 }
 
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
+                // for (i = 0; i < dots.length; i++) {
+                //     dots[i].className = dots[i].className.replace(" active", "");
+                // }
 
                 slideIndex++;
 
@@ -92,7 +92,7 @@
                 
                 slides[slideIndex-1].style.display = "block";
                 setTimeout(showSlides, 3000); 
-                dots[slideIndex-1].className += " active";
+                // dots[slideIndex-1].className += " active";
             }
         </script>
 

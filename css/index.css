@@ -201,7 +201,6 @@ nav a {
   text-align: center;
   color: white;
   /* Slideshow container */
-  /* The dot/bullet/indicator container */
 }
 .home .fitnessGirl {
   filter: brightness(18%);
@@ -268,26 +267,6 @@ nav a {
   .home .slideshow-container .titles {
     font-size: 2rem;
   }
-}
-.home .dot-container {
-  text-align: center;
-  padding: 20px;
-  /* The dots/bullets/indicators */
-  /* Add a background color to the active dot/circle */
-}
-.home .dot-container .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.home .dot-container .active,
-.home .dot-container .dot:hover {
-  background-color: #717171;
 }
 .home .user-options {
   padding: 4% 0;
