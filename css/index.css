@@ -442,6 +442,7 @@ footer {
 .about .team .members p {
   font-style: italic;
   padding: 0 9%;
+  letter-spacing: 0.1rem;
 }
 @media (max-width: 500px) {
   .about .team .members {
