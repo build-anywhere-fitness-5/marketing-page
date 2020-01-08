@@ -1,16 +1,65 @@
 * {
   box-sizing: border-box;
-  overflow: hidden;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 html, body {
-  font-size: 62.5%;
-  font-family: Raleway;
-  height: 100%;
+  font-family: 'Raleway', sans-serif;
+  color: @ebony-clay;
+  overflow: hidden;
 }
 
-.section {
-  height: 100%;
-}
+h1, h2, h3, h4, h5 {
+  font-family: 'Raleway', sans-serif;
+  color: @ebony-clay;
+  animation-duration: 1.5s;
+  animation-name: slidein;
 
+  @keyframes slidein {
+    from {
+      margin-top: 100%;
+      width: 100%; 
+    }
   
+    to {
+      margin-top: 0%;
+      width: 100%;
+    }
+  }
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  animation-duration: 1.5s;
+  animation-name: slidein;
+
+  @keyframes slidein {
+    from {
+      margin-top: 100%;
+      width: 100%; 
+    }
+  
+    to {
+      margin-top: 0%;
+      width: 100%;
+    }
+  }
+}
+
+.container {
+  max-width: 100%;
+  min-height: 100vh
+
+}

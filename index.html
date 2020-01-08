@@ -10,113 +10,85 @@
     </head>
     <body>
         <div class="container home">
-            <section class ="container-half">
-                <div class="left-half">
-                    <img src="img/girl_fixed.jpg" class="fitnessGirl" alt="Girl jumping in mid air.">
+
+            <img src="img/girl_fixed.jpg" class="fitnessGirl" alt="Girl jumping in mid air.">
+            
+            <nav>
+                <div class="navOptions">
+                    <a href="#">Help</a>
+                    <a href="#">About</a>
                 </div>
-               
-                <div class="right-half">
-                    <nav>
-                        <div class="navOptions">
-                            <a href="#">Help</a>
-                            <a href="#">About</a>
-                        </div>
-                    </nav>
-                    <h1>Anywhere Fitness</h1>
-                   
-                    <div class="slideshow-container">
+            </nav>
 
-                        <div class="mySlides fade">
-                          <!-- <div class="numbertext">1 / 3</div> -->
-                          <!-- <img src="img_nature_wide.jpg" style="width:100%"> -->
-                          <div class="text">
-                              <p>The world is your gym.<br> 
-                                  Welcome.
-                              </p>
-                          </div>
-                        </div>
-                        
-                        <div class="mySlides fade">
-                          <!-- <div class="numbertext">2 / 3</div> -->
-                          <!-- <img src="img_snow_wide.jpg" style="width:100%"> -->
-                          <div class="text">
-                              <h3>Browse classes</h3>
-                              <p>Our expert instructors conduct classes literally anywhere . Take a yoga class on a mountaintop. Do boot camp on the beach. Go to an abandoned mansion for mat pilates. The options are limitless.</p>
-                          </div>
-                        </div>
-                        
-                        <div class="mySlides fade">
-                          <!-- <div class="numbertext">3 / 3</div> -->
-                          <!-- <img src="img_mountains_wide.jpg" style="width:100%"> -->
-                          <div class="text">
-                              <h3>Register/Cancel Classes</h3>
-                              <p>Signing up for classes is easy. And you can cancel and reschedule classes with little to no cancellation fee.</p>
-                          </div>
-                        </div>
+            <h1>Anywhere Fitness</h1>
+        
+            <div class="user-options">
+                <div class="sign-up">
+                    <p>Sign Up</p>
+                </div>
 
-                        <div class="mySlides fade">
-                            <!-- <div class="numbertext">3 / 3</div> -->
-                            <!-- <img src="img_mountains_wide.jpg" style="width:100%"> -->
-                            <div class="text">
-                                <h3>Become Your Own Boss</h3>
-                                <p>Instead of needing a gym to attract clients, instructors can be their own boss and set up their fitness classes with a minimal start up fee.</p>
-                            </div>
-                        </div>
-                          
-                        
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                    </div>
+                <div class="buttons">
+                    <button>For Clients</button>
+                    <button>For Instructors</button>
+                </div>
+            </div>
+
+            <div class="slideshow-container">
+
+                <div class="mySlides">
+                    <q>The world is your gym. Welcome.</q>
+                </div>
+                
+                <div class="mySlides">
+                    <q class="titles">Browse classes</q>
                     <br>
-
-                    <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span> 
-                        <span class="dot" onclick="currentSlide(2)"></span> 
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                        <span class="dot" onclick="currentSlide(4)"></span> 
-                    </div>
-
-                    <div class="user-options">
-                        <div class="sign-up">
-                            <p>Sign Up</p>
-                        </div>
-    
-                        <div class="buttons">
-                            <button>For Clients</button>
-                            <button>For Instructors</button>
-                        </div>
-                    </div>
+                    <q>Our expert instructors conduct classes literally anywhere. Take a yoga class on a mountaintop. Do boot camp on the beach. Go to an abandoned mansion for mat pilates. The options are limitless.</q>
                 </div>
-            </section>
+                
+                <div class="mySlides">
+                    <q class="titles">Register/Cancel Classes</q>
+                    <br>
+                    <q>Signing up for classes is easy. And you can cancel and reschedule classes with little to no cancellation fee.</q>
+                </div>
+
+                <div class="mySlides">
+                    <q class="titles">Become Your Own Boss</q>
+                    <br>
+                    <q>Instead of needing a gym to attract clients, instructors can be their own boss and set up their fitness classes with a minimal start up fee.</q>
+                </div>
+                
+            </div>
+                
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span> 
+            </div>
+
         </div>
 
         <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
-            
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
             }
-            
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
             }
-            
-            function showSlides(n) {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
-              if (n > slides.length) {slideIndex = 1}    
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                  slides[i].style.display = "none";  
-              }
-              for (i = 0; i < dots.length; i++) {
-                  dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-            }
-            </script>
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 2 seconds
+            dots[slideIndex-1].className += " active";
+}
+        </script>
+
     </body>
 </html>
