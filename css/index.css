@@ -257,6 +257,10 @@ nav a {
     font-size: 1.4rem;
   }
 }
+.home .slideshow-container .bigQuotes {
+  font-size: 2.5rem;
+  color: white;
+}
 .home .slideshow-container .titles {
   color: white;
   font-weight: bold;
