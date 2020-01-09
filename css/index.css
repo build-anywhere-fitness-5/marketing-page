@@ -449,3 +449,272 @@ footer {
     width: 100%;
   }
 }
+.instructor {
+  border: 2px solid black;
+  padding: 0 5% 5%;
+}
+.instructor h2 {
+  font-size: 2.7rem;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+.instructor h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 1.25px 1.25px 0.625px grey;
+}
+.instructor p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.instructor h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  color: black;
+  margin: 2% 0 6%;
+  border-bottom: 2px dashed black;
+}
+@media (max-width: 500px) {
+  .instructor h1 {
+    line-height: 54px;
+    font-size: 4rem;
+    padding: 21% 0;
+  }
+}
+.instructor .schedule {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  padding: 0 2% 2%;
+  min-height: 100%;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 10%;
+}
+.instructor .schedule .studio-box {
+  display: flex;
+  padding: 2%;
+  background-color: #EAE9E7;
+  border-radius: 10px;
+  justify-content: space-around;
+  box-shadow: 5px 5px 2.5px grey;
+}
+.instructor .schedule .studio-box .studio-boxes-1 {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+  background-color: #BDBDBD;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2.5px grey;
+}
+.instructor .schedule .studio-box .studio-boxes-1 table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.instructor .schedule .studio-box .studio-boxes-1 td,
+.instructor .schedule .studio-box .studio-boxes-1 th {
+  text-align: left;
+  padding: 8px;
+}
+.instructor .schedule .studio-box .studio-boxes-1 tr:nth-child(odd) {
+  background-color: #FFCC99;
+}
+.instructor .schedule .studio-box .studio-boxes-1 tr:nth-child(even) {
+  background-color: white;
+}
+.instructor .schedule .studio-box .studio-boxes-1 button {
+  border-radius: 10px;
+  border: none;
+  background-color: #333333;
+  color: white;
+  box-shadow: 2.5px 2.5px 1.25px grey;
+}
+.instructor .schedule .studio-box .studio-boxes-1 .studio-creation {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+.instructor .schedule .studio-box .studio-boxes-1 .studio-list {
+  padding: 4% 0;
+}
+.instructor .schedule .studio-box .studio-boxes-2 {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+  background-color: #BDBDBD;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2.5px grey;
+}
+.instructor .schedule .studio-box .studio-boxes-2 table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.instructor .schedule .studio-box .studio-boxes-2 td,
+.instructor .schedule .studio-box .studio-boxes-2 th {
+  text-align: left;
+  padding: 8px;
+}
+.instructor .schedule .studio-box .studio-boxes-2 tr:nth-child(odd) {
+  background-color: #FFCC99;
+}
+.instructor .schedule .studio-box .studio-boxes-2 tr:nth-child(even) {
+  background-color: white;
+}
+.instructor .schedule .studio-box .studio-boxes-2 button {
+  border-radius: 10px;
+  border: none;
+  background-color: #333333;
+  color: white;
+  box-shadow: 2.5px 2.5px 1.25px grey;
+}
+.instructor .schedule .studio-box .studio-boxes-2 .studio-creation {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+.instructor .pass {
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  padding: 0 2% 2%;
+  min-height: 100%;
+  text-align: center;
+}
+.instructor .pass .studio-boxes-1 {
+  border: 1px solid crimson;
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+.instructor .pass .studio-boxes-1 button {
+  border-radius: 10px;
+  border: none;
+  background-color: #333333;
+  color: white;
+  box-shadow: 2.5px 2.5px 1.25px grey;
+}
+.instructor .pass .studio-boxes-1 .studio-creation {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+.instructor .pass .studio-boxes-1 .studio-pass-box {
+  border: 1px solid crimson;
+  display: flex;
+}
+.instructor .pass .studio-boxes-1 .studio-pass-box .studio-pass {
+  border: 1px solid crimson;
+  width: 33.333%;
+}
+.instructor .pass .studio-boxes-2 {
+  border: 1px solid crimson;
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+.instructor .pass .studio-boxes-2 button {
+  border-radius: 10px;
+  border: none;
+  background-color: #333333;
+  color: white;
+  box-shadow: 2.5px 2.5px 1.25px grey;
+}
+.instructor .pass .studio-boxes-2 .studio-creation {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+.instructor .pass .studio-boxes-2 .studio-pass-box {
+  border: 1px solid crimson;
+  display: flex;
+}
+.instructor .pass .studio-boxes-2 .studio-pass-box .studio-pass {
+  border: 1px solid crimson;
+  width: 33.333%;
+}
+.instructor .category {
+  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  padding: 0 2% 2%;
+  min-height: 100%;
+  text-align: center;
+  flex-direction: row;
+}
+.instructor .category .category-section-1 {
+  border: 1px solid crimson;
+  width: 50%;
+  padding: 1%;
+}
+.instructor .category .category-section-1 button {
+  border-radius: 10px;
+  border: none;
+  background-color: #333333;
+  color: white;
+  box-shadow: 2.5px 2.5px 1.25px grey;
+}
+.instructor .category .category-section-1 table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.instructor .category .category-section-1 td,
+.instructor .category .category-section-1 th {
+  text-align: left;
+  padding: 8px;
+}
+.instructor .category .category-section-1 tr:nth-child(odd) {
+  background-color: #FFCC99;
+}
+.instructor .category .category-section-1 tr:nth-child(even) {
+  background-color: white;
+}
+.instructor .category .category-section-1 .studio-creation {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+.instructor .category .category-section-2 {
+  border: 1px solid crimson;
+  width: 50%;
+  padding: 1%;
+}
+.instructor .category .category-section-2 button {
+  border-radius: 10px;
+  border: none;
+  background-color: #333333;
+  color: white;
+  box-shadow: 2.5px 2.5px 1.25px grey;
+}
+.instructor .category .category-section-2 table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.instructor .category .category-section-2 td,
+.instructor .category .category-section-2 th {
+  text-align: left;
+  padding: 8px;
+}
+.instructor .category .category-section-2 tr:nth-child(odd) {
+  background-color: #FFCC99;
+}
+.instructor .category .category-section-2 tr:nth-child(even) {
+  background-color: white;
+}
+.instructor .category .category-section-2 .studio-creation {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0;
+}
