@@ -474,7 +474,6 @@ footer {
   letter-spacing: 0.02em;
   color: black;
   margin: 2% 0 6%;
-  border-bottom: 2px dashed black;
 }
 @media (max-width: 500px) {
   .instructor h1 {
@@ -488,11 +487,11 @@ footer {
   justify-content: center;
   flex-direction: column;
   align-content: center;
-  padding: 0 2% 2%;
+  padding: 2%;
   min-height: 100%;
   text-align: center;
   border-radius: 10px;
-  margin-bottom: 10%;
+  margin-bottom: 6%;
 }
 .instructor .schedule .studio-box {
   display: flex;
@@ -501,12 +500,13 @@ footer {
   border-radius: 10px;
   justify-content: space-around;
   box-shadow: 5px 5px 2.5px grey;
+  flex-wrap: wrap;
 }
 .instructor .schedule .studio-box .studio-boxes-1 {
   width: 48%;
   display: flex;
   flex-direction: column;
-  padding: 1%;
+  padding: 1.5%;
   background-color: #BDBDBD;
   border-radius: 10px;
   box-shadow: 5px 5px 2.5px grey;
@@ -546,7 +546,7 @@ footer {
   width: 48%;
   display: flex;
   flex-direction: column;
-  padding: 1%;
+  padding: 1.5%;
   background-color: #BDBDBD;
   border-radius: 10px;
   box-shadow: 5px 5px 2.5px grey;
@@ -580,105 +580,145 @@ footer {
   padding: 2% 0;
 }
 .instructor .pass {
-  border: 1px solid blue;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-content: center;
-  padding: 0 2% 2%;
+  padding: 2%;
   min-height: 100%;
   text-align: center;
+  border-radius: 10px;
+  margin-bottom: 6%;
 }
-.instructor .pass .studio-boxes-1 {
-  border: 1px solid crimson;
+.instructor .pass .studio-box {
   display: flex;
+  padding: 2%;
+  background-color: #EAE9E7;
+  border-radius: 10px;
+  justify-content: space-around;
+  box-shadow: 5px 5px 2.5px grey;
   flex-direction: column;
-  padding: 1%;
+  padding: 2% 2% 0;
 }
-.instructor .pass .studio-boxes-1 button {
+.instructor .pass .studio-box .studio-boxes-1 {
+  width: 48%;
+  display: flex;
+  padding: 1.5%;
+  background-color: #BDBDBD;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2.5px grey;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 2%;
+}
+.instructor .pass .studio-box .studio-boxes-1 button {
   border-radius: 10px;
   border: none;
   background-color: #333333;
   color: white;
   box-shadow: 2.5px 2.5px 1.25px grey;
 }
-.instructor .pass .studio-boxes-1 .studio-creation {
+.instructor .pass .studio-box .studio-boxes-1 .studio-creation {
   display: flex;
   justify-content: space-between;
   padding: 2% 0;
 }
-.instructor .pass .studio-boxes-1 .studio-pass-box {
-  border: 1px solid crimson;
+.instructor .pass .studio-box .studio-boxes-1 .studio-pass-box {
   display: flex;
+  background-color: white;
 }
-.instructor .pass .studio-boxes-1 .studio-pass-box .studio-pass {
-  border: 1px solid crimson;
+.instructor .pass .studio-box .studio-boxes-1 .studio-pass-box .studio-pass {
   width: 33.333%;
 }
-.instructor .pass .studio-boxes-2 {
-  border: 1px solid crimson;
+.instructor .pass .studio-box .studio-boxes-2 {
+  width: 48%;
   display: flex;
+  padding: 1.5%;
+  background-color: #BDBDBD;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2.5px grey;
   flex-direction: column;
-  padding: 1%;
+  width: 100%;
+  margin-bottom: 2%;
 }
-.instructor .pass .studio-boxes-2 button {
+.instructor .pass .studio-box .studio-boxes-2 button {
   border-radius: 10px;
   border: none;
   background-color: #333333;
   color: white;
   box-shadow: 2.5px 2.5px 1.25px grey;
 }
-.instructor .pass .studio-boxes-2 .studio-creation {
+.instructor .pass .studio-box .studio-boxes-2 .studio-creation {
   display: flex;
   justify-content: space-between;
   padding: 2% 0;
 }
-.instructor .pass .studio-boxes-2 .studio-pass-box {
-  border: 1px solid crimson;
+.instructor .pass .studio-box .studio-boxes-2 .studio-pass-box {
   display: flex;
+  background-color: white;
 }
-.instructor .pass .studio-boxes-2 .studio-pass-box .studio-pass {
-  border: 1px solid crimson;
+.instructor .pass .studio-box .studio-boxes-2 .studio-pass-box .studio-pass {
   width: 33.333%;
 }
 .instructor .category {
-  border: 1px solid green;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-content: center;
-  padding: 0 2% 2%;
+  padding: 2%;
   min-height: 100%;
   text-align: center;
+  border-radius: 10px;
+  margin-bottom: 6%;
   flex-direction: row;
+  justify-content: space-around;
 }
 .instructor .category .category-section-1 {
-  border: 1px solid crimson;
-  width: 50%;
-  padding: 1%;
+  width: 48%;
 }
-.instructor .category .category-section-1 button {
+.instructor .category .category-section-1 .categories {
+  display: flex;
+  padding: 2%;
+  background-color: #EAE9E7;
+  border-radius: 10px;
+  justify-content: space-around;
+  box-shadow: 5px 5px 2.5px grey;
+  flex-direction: column;
+  padding: 2% 2% 0;
+}
+.instructor .category .category-section-1 .categories button {
   border-radius: 10px;
   border: none;
   background-color: #333333;
   color: white;
   box-shadow: 2.5px 2.5px 1.25px grey;
 }
-.instructor .category .category-section-1 table {
+.instructor .category .category-section-1 .categories table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
-.instructor .category .category-section-1 td,
-.instructor .category .category-section-1 th {
+.instructor .category .category-section-1 .categories td,
+.instructor .category .category-section-1 .categories th {
   text-align: left;
   padding: 8px;
 }
-.instructor .category .category-section-1 tr:nth-child(odd) {
+.instructor .category .category-section-1 .categories tr:nth-child(odd) {
   background-color: #FFCC99;
 }
-.instructor .category .category-section-1 tr:nth-child(even) {
+.instructor .category .category-section-1 .categories tr:nth-child(even) {
   background-color: white;
+}
+.instructor .category .category-section-1 .categories .categories-boxes {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5%;
+  background-color: #BDBDBD;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2.5px grey;
+  width: 100%;
+  margin-bottom: 5%;
 }
 .instructor .category .category-section-1 .studio-creation {
   display: flex;
@@ -686,32 +726,51 @@ footer {
   padding: 2% 0;
 }
 .instructor .category .category-section-2 {
-  border: 1px solid crimson;
-  width: 50%;
-  padding: 1%;
+  width: 48%;
 }
-.instructor .category .category-section-2 button {
+.instructor .category .category-section-2 .categories {
+  display: flex;
+  padding: 2%;
+  background-color: #EAE9E7;
+  border-radius: 10px;
+  justify-content: space-around;
+  box-shadow: 5px 5px 2.5px grey;
+  flex-direction: column;
+  padding: 2% 2% 0;
+}
+.instructor .category .category-section-2 .categories button {
   border-radius: 10px;
   border: none;
   background-color: #333333;
   color: white;
   box-shadow: 2.5px 2.5px 1.25px grey;
 }
-.instructor .category .category-section-2 table {
+.instructor .category .category-section-2 .categories table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
-.instructor .category .category-section-2 td,
-.instructor .category .category-section-2 th {
+.instructor .category .category-section-2 .categories td,
+.instructor .category .category-section-2 .categories th {
   text-align: left;
   padding: 8px;
 }
-.instructor .category .category-section-2 tr:nth-child(odd) {
+.instructor .category .category-section-2 .categories tr:nth-child(odd) {
   background-color: #FFCC99;
 }
-.instructor .category .category-section-2 tr:nth-child(even) {
+.instructor .category .category-section-2 .categories tr:nth-child(even) {
   background-color: white;
+}
+.instructor .category .category-section-2 .categories .categories-boxes {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5%;
+  background-color: #BDBDBD;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2.5px grey;
+  width: 100%;
+  margin-bottom: 5%;
 }
 .instructor .category .category-section-2 .studio-creation {
   display: flex;
